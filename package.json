@@ -1,5 +1,5 @@
 {
-	"name": "n8n-nodes-friendgrid",
+	"name": "n8n-nodes-random",
 	"version": "0.1.0",
 	"description": "n8n node to create contacts in SendGrid",
 	"keywords": [
@@ -8,12 +8,12 @@
 	"license": "MIT",
 	"homepage": "https://n8n.io",
 	"author": {
-		"name": "Test",
-		"email": "test@example.com"
+		"name": "Giovanni Suriani Ferreira",
+		"email": "giovanni.suriani2@gmail.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+<your-repo-url>"
+		"url": "git+https://github.com/giovanni-suriani/teste_pratico_onfly"
 	},
 	"engines": {
 		"node": ">=20.15"
@@ -32,11 +32,8 @@
 	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
-		"credentials": [
-			"dist/credentials/FriendGridApi.credentials.js"
-		],
 		"nodes": [
-			"dist/nodes/FriendGrid/FriendGrid.node.js"
+			"dist/nodes/Random/Random.node.js"
 		]
 	},
 	"devDependencies": {
