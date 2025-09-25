@@ -77,7 +77,9 @@ export class Random implements INodeType {
 
 			const min = this.getNodeParameter('min', i) as number;
 			const max = this.getNodeParameter('max', i) as number;
+			// console.log('min', min, 'max', max);
 
+			// Validations
 			if (!Number.isFinite(min) || !Number.isFinite(max)) {
 				throw new Error('Min and Max must be finite numbers.');
 			}
@@ -88,6 +90,7 @@ export class Random implements INodeType {
 				throw new Error('Max must be greater than or equal to Min.');
 			}
 
+			// Url request
 			const options = {
 				method: 'GET',
 				url: 'https://www.random.org/integers/',
@@ -104,6 +107,7 @@ export class Random implements INodeType {
 			} as const;
 
 			const response = await this.helpers.httpRequest(options);
+			// console.log('response', response);
 
 			const value = parseInt(String(response).trim(), 10);
 			if (!Number.isInteger(value)) {
@@ -119,9 +123,9 @@ export class Random implements INodeType {
 
 			returnData.push({
 				json: out,
-			});
+			}); 
 		}
 
-		return [returnData];
+		return [returnData]; 
 	}
 }
