@@ -6,10 +6,10 @@ Este repositório é a solução do teste pratico, contém um conector programá
 ```
 n8n-nodes-random/
 ├─ package.json
-├─ tsconfig.json
 └─ nodes/
-└─ Random/
-└─ Random.node.ts
+└─ nodes/Random/
+└─ nodes/Random.node.json
+└─ nodes/Random.node.ts
 ```
 
 ## 📋 Pré-requisitos
