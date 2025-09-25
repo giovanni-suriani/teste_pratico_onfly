@@ -30,6 +30,7 @@ Clone este repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/giovanni-suriani/teste_pratico_onfly.git
+cd teste_pratico_onfly
 npm install
 npm run build
 docker compose up -d
