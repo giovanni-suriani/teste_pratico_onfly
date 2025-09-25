@@ -34,7 +34,7 @@ npm install
 npm run build
 docker compose up -d
 ```
-**Certifique-se de que a porta 5678 esta livre**
+**Certifique-se de que a porta 5678 está livre**
 
 ## 🚀 Uso
 
